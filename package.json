@@ -7,7 +7,7 @@
     "email": "rokas.anisas@gmail.com"
   },
   "scripts": {
-    "dev": "vite",
+    "start": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
