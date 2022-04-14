@@ -1,0 +1,10 @@
+{
+  "name": "ra-react-template-2",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rokas Anisas",
+    "email": "rokas.anisas@gmail.com"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
