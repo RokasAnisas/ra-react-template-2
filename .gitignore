@@ -4,6 +4,7 @@ dist/
 # node
 node_modules/
 yarn-error.log
+.yarn/
 
 # misc
 .DS_Store
