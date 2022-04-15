@@ -28,6 +28,7 @@
     "eslint-config-ra-react": "^1.0.5",
     "eslint-plugin-react": "^7.29.4",
     "prettier": "^2.6.2",
+    "sass": "^1.50.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.4"
   }
