@@ -12,7 +12,11 @@ const App: FC = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <p className="hello">Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount(count => count + 1)}>
+          <button
+            type="button"
+            className="button"
+            onClick={() => setCount(count => count + 1)}
+          >
             count is: {count}
           </button>
         </p>
