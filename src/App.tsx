@@ -1,6 +1,7 @@
 import { useState, FC } from 'react';
 
 import logo from './logo.svg';
+
 import style from './App.module.scss';
 
 const App: FC = () => {
@@ -15,7 +16,7 @@ const App: FC = () => {
           <button
             type="button"
             className="button"
-            onClick={() => setCount(count => count + 1)}
+            onClick={() => setCount(v => v + 1)}
           >
             count is: {count}
           </button>
