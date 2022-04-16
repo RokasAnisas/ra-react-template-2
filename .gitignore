@@ -6,5 +6,8 @@ node_modules/
 yarn-error.log
 .yarn/
 
+# test
+coverage/
+
 # misc
 .DS_Store
