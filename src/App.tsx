@@ -11,7 +11,9 @@ const App: FC = () => {
     <div className={style.app}>
       <header className={style.app_header}>
         <img src={logo} className={style.app_logo} alt="logo" />
-        <p className="hello">Hello Vite + React!</p>
+        <p className="hello" data-testid="hello">
+          Hello Vite + React!
+        </p>
         <p>
           <button
             type="button"
