@@ -1,15 +1,16 @@
 ls:
-  src:
-    # .dir: kebab-case
-    # .d.ts: kebab-case
-    # .js: kebab-case
-    # .ts: kebab-case
+  templates:
+    .json: kebab-case
 
-    components:
-      # .dir: PascalCase
-      # .ts: regex:Schema(([A-Z])\w+.(hooks|props)\w+]+)
+  src:
+    .dir: kebab-case
+    .d.ts: kebab-case
+
+    components/*:
+      .dir: PascalCase
       .module.scss: pascalcase
-      .hooks.tsx: pascalcase
+      .hooks.ts: pascalcase
+      .story.tsx: pascalcase
       .spec.tsx: pascalcase
       .tsx: pascalcase
 
