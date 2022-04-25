@@ -7,7 +7,7 @@ ls:
     .d.ts: kebab-case
 
     components/*:
-      .dir: PascalCase
+      .dir: pascalcase
       .module.scss: pascalcase
       .hooks.ts: pascalcase
       .story.tsx: pascalcase
