@@ -18,7 +18,8 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "npx playwright test",
-    "generate": "motem templates"
+    "generate": "motem templates",
+    "update": "yarn upgrade-interactive"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -31,8 +32,8 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.0",
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
+    "@types/react": "^18.0.7",
+    "@types/react-dom": "^18.0.2",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@vitejs/plugin-react": "^1.3.1",
     "c8": "^7.11.0",
