@@ -836,6 +836,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ls-lint/ls-lint@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@ls-lint/ls-lint@npm:1.11.0"
+  bin:
+    ls-lint: bin/cli.js
+  checksum: d94df05c3bb3ed29e0cceab61af4c8f439920ebadd889c7bcaefe99328c3e32ebcad4e58e7ed284af512361290d3ba2bce33226344e95e65175d14b5b5666484
+  conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64)
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4699,6 +4709,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ra-react-template-2@workspace:."
   dependencies:
+    "@ls-lint/ls-lint": ^1.11.0
     "@playwright/test": ^1.21.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.0.1
