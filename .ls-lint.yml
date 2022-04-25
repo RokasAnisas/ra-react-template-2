@@ -1,7 +1,9 @@
 ls:
   src:
     .dir: kebab-case
-    .ts: lowercase
+    components:
+      .ts: PascalCase
+      .tsx: PascalCase
 
 ignore:
   - node_modules
