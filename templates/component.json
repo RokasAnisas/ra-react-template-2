@@ -69,7 +69,7 @@
             "describe('[ModuleName]', () => {",
             "  it('Should render label', () => {",
             "    const TEST_LABEL = 'TEST LABEL';",
-            "    const { container } = render(<[ModuleName] children={TEST_LABEL} />);",
+            "    const { container } = render(<[ModuleName]>{TEST_LABEL}</[ModuleName]>);",
             "",
             "    expect(container.firstChild?.textContent).toBe(TEST_LABEL);",
             "  });",
