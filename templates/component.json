@@ -8,7 +8,7 @@
         {
           "fileName": "[ModuleName].tsx",
           "template": [
-            "import React, { VFC } from 'react';",
+            "import { FC } from 'react';",
             "import classNames from 'classnames/bind';",
             "",
             "import { [ModuleName]Props } from './[ModuleName].props';",
@@ -16,10 +16,10 @@
             "import styles from './[ModuleName].module.scss';",
             "const cx = classNames.bind(styles);",
             "",
-            "export const [ModuleName]: VFC<[ModuleName]Props> = ({ label }) => {",
+            "export const [ModuleName]: FC<[ModuleName]Props> = ({ children }) => {",
             "  const className = '[module-name]';",
             "",
-            "  return <div className={cx(className)}>{label}</div>;",
+            "  return <div className={cx(className)}>{children}</div>;",
             "};",
             ""
           ]
@@ -50,8 +50,10 @@
         {
           "fileName": "[ModuleName].props.ts",
           "template": [
+            "import { ReactNode } from 'react';",
+            "",
             "export interface [ModuleName]Props {",
-            "  label: string;",
+            "  children: ReactNode;",
             "}",
             ""
           ]

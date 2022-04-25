@@ -1,9 +1,17 @@
 ls:
   src:
-    .dir: kebab-case
+    # .dir: kebab-case
+    # .d.ts: kebab-case
+    # .js: kebab-case
+    # .ts: kebab-case
+
     components:
-      .ts: PascalCase
-      .tsx: PascalCase
+      # .dir: PascalCase
+      # .ts: regex:Schema(([A-Z])\w+.(hooks|props)\w+]+)
+      .module.scss: pascalcase
+      .hooks.tsx: pascalcase
+      .spec.tsx: pascalcase
+      .tsx: pascalcase
 
 ignore:
   - node_modules
