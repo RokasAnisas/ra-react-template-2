@@ -1,6 +1,8 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
+import { fileURLToPath, URL } from 'url';
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -12,5 +14,10 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
     include: ['src/**/*.spec.tsx', 'src/**/*.spec.ts'],
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
 });
