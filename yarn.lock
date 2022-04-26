@@ -836,6 +836,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ls-lint/ls-lint@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@ls-lint/ls-lint@npm:1.11.0"
+  bin:
+    ls-lint: bin/cli.js
+  checksum: d94df05c3bb3ed29e0cceab61af4c8f439920ebadd889c7bcaefe99328c3e32ebcad4e58e7ed284af512361290d3ba2bce33226344e95e65175d14b5b5666484
+  conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64)
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1086,7 +1096,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.1":
+"@types/react-dom@npm:^18.0.0":
   version: 18.0.1
   resolution: "@types/react-dom@npm:18.0.1"
   dependencies:
@@ -1095,7 +1105,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.0.5":
+"@types/react-dom@npm:^18.0.2":
+  version: 18.0.2
+  resolution: "@types/react-dom@npm:18.0.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 2b0b138d8634ccfd8a86b17cb5414b122ee0cb6f650377d772f6008761a27e4c2531c08e3cab71aaa19b6893af6a508c664aa314db3ebcff5b8179173c9c9307
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
   version: 18.0.5
   resolution: "@types/react@npm:18.0.5"
   dependencies:
@@ -1103,6 +1122,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 70d3336d43ef25509fa89ef3278f57fdf1945fc921e69b7890a78ab9a52a55ee38e2f13aa71eb4f6032b7311e7557860ce8836c1acf3028304989571c9736a96
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.0.7":
+  version: 18.0.7
+  resolution: "@types/react@npm:18.0.7"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 0cbbfc118227a8bd25cbec253f6ace46c1af0c9b1a4abfe5a51ed1977b93c3e82af2a70d38ba77fc36075e886d303dd57f3302447b70152702028f20a4675e32
   languageName: node
   linkType: hard
 
@@ -1784,6 +1814,13 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1"
+  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
   languageName: node
   linkType: hard
 
@@ -4699,15 +4736,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ra-react-template-2@workspace:."
   dependencies:
+    "@ls-lint/ls-lint": ^1.11.0
     "@playwright/test": ^1.21.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.0.1
     "@testing-library/user-event": ^14.1.0
-    "@types/react": ^18.0.5
-    "@types/react-dom": ^18.0.1
+    "@types/react": ^18.0.7
+    "@types/react-dom": ^18.0.2
     "@typescript-eslint/eslint-plugin": ^5.19.0
     "@vitejs/plugin-react": ^1.3.1
     c8: ^7.11.0
+    classnames: ^2.3.1
     eslint: ^8.13.0
     eslint-config-ra-react: ^1.1.1
     eslint-plugin-import: ^2.26.0
