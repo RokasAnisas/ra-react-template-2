@@ -1,9 +1,9 @@
 {
-  "name": "Store module",
-  "description": "Generate store module",
+  "name": "Feature",
+  "description": "Generate a new feature",
   "add": [
     {
-      "dirPath": "src/store/modules/[moduleName]",
+      "dirPath": "src/store/features/[moduleName]",
       "files": [
         {
           "fileName": "[moduleName].state.ts",
