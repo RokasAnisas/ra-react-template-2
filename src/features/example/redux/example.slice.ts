@@ -3,18 +3,17 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/middleware/redux/store';
 
 // Define a type for the slice state
-interface CounterState {
+interface ExampleState {
   value: number;
 }
 
 // Define the initial state using that type
-const initialState: CounterState = {
+const initialState: ExampleState = {
   value: 0,
 };
 
 export const exampleSlice = createSlice({
   name: 'example',
-  // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
     increment: state => {

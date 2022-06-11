@@ -1,17 +1,18 @@
 import { useAppDispatch, useAppSelector } from '@/middleware/redux/hooks';
 import { Button } from '@/components/Button';
-import { useBindInput } from '@/hooks/useBindInput';
+import { useBindInput } from '@/utility/hooks/useBindInput';
 
 import {
   increment,
   decrement,
   incrementByAmount,
+  selectCount,
 } from '../redux/example.slice';
 
 export const Example = () => {
   const { bind, value, setValue } = useBindInput();
 
-  const example = useAppSelector(state => state.example.value);
+  const example = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
 
   const increaseBy = () => {
