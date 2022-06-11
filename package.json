@@ -22,9 +22,11 @@
     "update": "yarn upgrade-interactive"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "classnames": "^2.3.1",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@ls-lint/ls-lint": "^1.11.0",
