@@ -1,7 +1,6 @@
-import { ChangeEvent, useState } from 'react';
-
 import { useAppDispatch, useAppSelector } from '@/middleware/redux/hooks';
 import { Button } from '@/components/Button';
+import { useBindInput } from '@/hooks/useBindInput';
 
 import {
   increment,
@@ -10,12 +9,15 @@ import {
 } from '../redux/example.slice';
 
 export const Example = () => {
-  const [value, setValue] = useState('');
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) =>
-    setValue(e.target.value);
+  const { bind, value, setValue } = useBindInput();
 
   const example = useAppSelector(state => state.example.value);
   const dispatch = useAppDispatch();
+
+  const increaseBy = () => {
+    dispatch(incrementByAmount(+value));
+    setValue('');
+  };
 
   return (
     <div>
@@ -24,10 +26,8 @@ export const Example = () => {
       <Button onClick={() => dispatch(decrement())}>- 1</Button>
       <div>
         <span>Increment by value</span>
-        <input type="number" value={value} onChange={handleChange} />
-        <Button onClick={() => dispatch(incrementByAmount(+value))}>
-          Increase by
-        </Button>
+        <input type="number" {...bind} />
+        <Button onClick={increaseBy}>Increase by</Button>
       </div>
     </div>
   );
