@@ -1,4 +1,8 @@
+@use 'src/styles/res' as res;
+
 .button {
+  @include res.transition([background-color]);
+
   display: flex;
   justify-content: center;
   background-color: #59a96a;
