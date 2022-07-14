@@ -1,11 +1,24 @@
 import { render, RenderOptions } from '@testing-library/react';
+import { Provider } from 'react-redux';
+
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+import { store } from '@/middleware/redux/redux.store';
 
 type Options = RenderOptions;
+
+const queryClient = new QueryClient();
 
 const customRender = (ui: React.ReactElement, options: Options = {}) =>
   render(ui, {
     // wrap provider(s) here if needed
-    wrapper: ({ children }) => children,
+    wrapper: ({ children }) => (
+      <Provider store={store}>
+        <QueryClientProvider client={queryClient}>
+          {children}
+        </QueryClientProvider>
+      </Provider>
+    ),
     ...options,
   });
 
