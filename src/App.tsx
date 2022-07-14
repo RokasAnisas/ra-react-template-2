@@ -1,22 +1,19 @@
 import { FC } from 'react';
-import { Provider } from 'react-redux';
-import { QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
 
-import { store } from '@/middleware/redux/redux.store';
-import { queryClient } from '@/middleware/react-query/react-query.setup';
-
-import { Example } from './features/example/components/Example';
+import { Example } from '@/features/example/components/Example';
+import { useApplyTheme } from '@/features/themeSwitcher/themeSwitcher.hooks';
+import { toggleTheme } from '@/features/themeSwitcher/themeSwitcher.slice';
+import { useAppDispatch } from '@/middleware/redux/redux.hooks';
 
 const App: FC = () => {
-  return (
-    <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools />
+  const dispatch = useAppDispatch();
+  useApplyTheme();
 
-        <Example />
-      </QueryClientProvider>
-    </Provider>
+  return (
+    <>
+      <button onClick={() => dispatch(toggleTheme())}>Toggle theme</button>
+      <Example />
+    </>
   );
 };
 
