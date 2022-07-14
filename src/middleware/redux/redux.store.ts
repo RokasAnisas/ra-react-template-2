@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import exampleSlice from '@/features/example/redux/example.slice';
+import exampleSlice from '@/features/example/example.slice';
 import themeSwitcherSlice from '@/features/themeSwitcher/themeSwitcher.slice';
 
 export const store = configureStore({

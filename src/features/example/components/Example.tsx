@@ -7,8 +7,8 @@ import {
   decrement,
   incrementByAmount,
   selectCount,
-} from '../redux/example.slice';
-import { useGetExample } from '../queries/example.query';
+} from '../example.slice';
+import { useGetExample } from '../example.query';
 
 export const Example = () => {
   const { bind, value, setValue } = useBindInput();
