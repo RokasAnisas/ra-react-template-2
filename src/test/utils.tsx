@@ -1,7 +1,6 @@
-import { render, RenderOptions } from '@testing-library/react';
 import { Provider } from 'react-redux';
-
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { render, RenderOptions } from '@testing-library/react';
 
 import { store } from '@/middleware/redux/redux.store';
 
