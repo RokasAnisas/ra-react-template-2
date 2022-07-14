@@ -7,6 +7,12 @@
     "email": "rokas.anisas@gmail.com"
   },
   "packageManager": "yarn@3.2.0",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16.13.0",
+    "npm": "please-use-yarn",
+    "yarn": ">=3.2.0"
+  },
   "scripts": {
     "start": "vite --host",
     "build": "tsc && vite build",
