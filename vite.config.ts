@@ -15,6 +15,9 @@ export default defineConfig({
     setupFiles: './src/test/setup.ts',
     include: ['src/**/*.spec.tsx', 'src/**/*.spec.ts'],
   },
+  server: {
+    port: 3000,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
