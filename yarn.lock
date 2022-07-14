@@ -586,7 +586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.22.2":
+"@playwright/test@npm:^1.23.3":
   version: 1.23.3
   resolution: "@playwright/test@npm:1.23.3"
   dependencies:
@@ -682,7 +682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^14.2.0":
+"@testing-library/user-event@npm:^14.2.2":
   version: 14.2.2
   resolution: "@testing-library/user-event@npm:14.2.2"
   peerDependencies:
@@ -1406,7 +1406,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.20.2, browserslist@npm:^4.20.3, browserslist@npm:^4.20.4":
+"browserslist@npm:^4.20.2, browserslist@npm:^4.20.3, browserslist@npm:^4.21.2":
   version: 4.21.2
   resolution: "browserslist@npm:4.21.2"
   dependencies:
@@ -4358,7 +4358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.2":
+"prettier@npm:^2.7.1":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:
@@ -4454,11 +4454,11 @@ __metadata:
   resolution: "ra-react-template-2@workspace:."
   dependencies:
     "@ls-lint/ls-lint": ^1.11.2
-    "@playwright/test": ^1.22.2
+    "@playwright/test": ^1.23.3
     "@reduxjs/toolkit": ^1.8.2
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
-    "@testing-library/user-event": ^14.2.0
+    "@testing-library/user-event": ^14.2.2
     "@types/babel__core": ^7.1.19
     "@types/react": ^18.0.12
     "@types/react-dom": ^18.0.5
@@ -4466,7 +4466,7 @@ __metadata:
     "@vitejs/plugin-react": ^1.3.2
     autoprefixer: ^10.4.7
     axios: ^0.27.2
-    browserslist: ^4.20.4
+    browserslist: ^4.21.2
     c8: ^7.11.3
     classnames: ^2.3.1
     eslint: ^8.19.0
@@ -4479,13 +4479,13 @@ __metadata:
     jsdom: ^19.0.0
     motem: ^1.0.4
     postcss: ^8.4.14
-    prettier: ^2.6.2
+    prettier: ^2.7.1
     react: ^18.1.0
     react-dom: ^18.1.0
     react-query: ^3.39.1
     react-redux: ^8.0.2
     sass: ^1.53.0
-    ts-node: ^10.8.1
+    ts-node: ^10.9.1
     typescript: 4.7.4
     vite: ^2.9.12
     vitest: ^0.14.2
@@ -5218,7 +5218,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.8.1":
+"ts-node@npm:^10.9.1":
   version: 10.9.1
   resolution: "ts-node@npm:10.9.1"
   dependencies:
