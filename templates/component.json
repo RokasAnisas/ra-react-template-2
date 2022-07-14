@@ -25,29 +25,6 @@
           ]
         },
         {
-          "fileName": "[ModuleName].story.tsx",
-          "template": [
-            "import React from 'react';",
-            "import { Story, Meta } from '@storybook/react/types-6-0';",
-            "",
-            "import { [ModuleName] } from './[ModuleName]';",
-            "import { [ModuleName]Props } from './[ModuleName].props';",
-            "",
-            "export default {",
-            "  title: 'Components/[ModuleName]',",
-            "  component: [ModuleName],",
-            "} as Meta;",
-            "",
-            "const Template: Story<[ModuleName]Props> = args => <[ModuleName] {...args} />;",
-            "",
-            "export const Default = Template.bind({});",
-            "Default.args = {",
-            "  label: '[ModuleName]'",
-            "} as [ModuleName]Props;",
-            ""
-          ]
-        },
-        {
           "fileName": "[ModuleName].props.ts",
           "template": [
             "import { ReactNode } from 'react';",
@@ -61,8 +38,7 @@
         {
           "fileName": "[ModuleName].spec.tsx",
           "template": [
-            "import React from 'react';",
-            "import { render } from '@testing-library/react';",
+            "import { render } from '@/test/utils';",
             "",
             "import { [ModuleName] } from './[ModuleName]';",
             "",
@@ -80,7 +56,7 @@
         {
           "fileName": "[ModuleName].module.scss",
           "template": [
-            "@use 'src/styles/resources' as theme;",
+            "@use 'src/styles/resources' as res;",
             "",
             ".[module-name] {",
             "  display: flex;",
