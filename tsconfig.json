@@ -20,7 +20,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "e2e", "src/*.ts"],
+  "include": ["src", "vite.config.ts", "vitest.config.ts", "e2e", "src/*.ts"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
