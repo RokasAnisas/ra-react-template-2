@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from '@/config/redux/redux.hooks';
 import { Button } from '@/components/Button';
-import { useBindInput } from '@/features/example/hooks/useBindInput';
+import { useBindInput } from '@/modules/example/hooks/useBindInput';
 
 import {
   increment,

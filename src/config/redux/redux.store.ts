@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import exampleSlice from '@/features/example/example.slice';
-import themeSwitcherSlice from '@/features/themeSwitcher/themeSwitcher.slice';
+import exampleSlice from '@/modules/example/example.slice';
+import themeSwitcherSlice from '@/modules/themeSwitcher/themeSwitcher.slice';
 
 export const store = configureStore({
   reducer: {

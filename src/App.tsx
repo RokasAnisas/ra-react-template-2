@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
-import { Example } from '@/features/example/components/Example';
-import { useApplyTheme } from '@/features/themeSwitcher/themeSwitcher.hooks';
-import { ThemeSwitcherButton } from '@/features/themeSwitcher/components/ThemeSwitcherButton';
+import { Example } from '@/modules/example/components/Example';
+import { useApplyTheme } from '@/modules/themeSwitcher/themeSwitcher.hooks';
+import { ThemeSwitcherButton } from '@/modules/themeSwitcher/components/ThemeSwitcherButton';
 
 const App: FC = () => {
   useApplyTheme();

@@ -1,9 +1,9 @@
 {
-  "name": "Feature",
+  "name": "Module",
   "description": "Generate a new feature",
   "add": [
     {
-      "dirPath": "src/features/[moduleName]",
+      "dirPath": "src/modules/[moduleName]",
       "files": [
         {
           "fileName": "[moduleName].hooks.ts",
@@ -67,7 +67,7 @@
         {
           "hook": "// IMPORT_NEW_SLICE",
           "appendLines": [
-            "import [moduleName] from '@/features/[moduleName]/[moduleName].slice';"
+            "import [moduleName] from '@/modules/[moduleName]/[moduleName].slice';"
           ]
         },
         {
