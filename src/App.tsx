@@ -5,6 +5,7 @@ import { useApplyTheme } from '@/modules/themeSwitcher/themeSwitcher.hooks';
 import { ThemeSwitcherButton } from '@/modules/themeSwitcher/components/ThemeSwitcherButton';
 
 import { HomeRoute } from './routes/Home.route';
+import { routes } from './config/react-router/routes';
 
 const App: FC = () => {
   useApplyTheme();
@@ -12,7 +13,7 @@ const App: FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeRoute />} />
+        <Route path={routes.home} element={<HomeRoute />} />
         <Route path="/theme" element={<ThemeSwitcherButton />} />
       </Routes>
     </BrowserRouter>
