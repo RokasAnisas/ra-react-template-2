@@ -1,15 +1,12 @@
 import { FC } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { useApplyTheme } from '@/modules/themeSwitcher/themeSwitcher.hooks';
 import { ThemeSwitcherButton } from '@/modules/themeSwitcher/components/ThemeSwitcherButton';
 
 import { HomeRoute } from './routes/Home.route';
 import { routes } from './config/react-router/routes';
 
 const App: FC = () => {
-  useApplyTheme();
-
   return (
     <BrowserRouter>
       <Routes>
