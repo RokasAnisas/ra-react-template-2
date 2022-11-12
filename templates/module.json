@@ -23,7 +23,7 @@
           "template": [
             "import { createSlice, PayloadAction } from '@reduxjs/toolkit';",
             "",
-            "import type { RootState } from '@/middleware/redux/redux.store';",
+            "import type { RootState } from '@/config/redux/redux.store';",
             "",
             "interface [ModuleName]State {",
             "  value: number;",
@@ -62,7 +62,7 @@
   ],
   "modify": [
     {
-      "filePath": "src/middleware/redux/redux.store.ts",
+      "filePath": "src/config/redux/redux.store.ts",
       "lines": [
         {
           "hook": "// IMPORT_NEW_SLICE",

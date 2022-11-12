@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Example } from '@/modules/example/components/Example';
 import { useApplyTheme } from '@/modules/themeSwitcher/themeSwitcher.hooks';
@@ -8,10 +9,12 @@ const App: FC = () => {
   useApplyTheme();
 
   return (
-    <>
-      <ThemeSwitcherButton />
-      <Example />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Example />} />
+        <Route path="/theme" element={<ThemeSwitcherButton />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
