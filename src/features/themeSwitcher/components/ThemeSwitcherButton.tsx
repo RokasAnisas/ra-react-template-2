@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { useAppDispatch } from '@/middleware/redux/redux.hooks';
+import { useAppDispatch } from '@/config/redux/redux.hooks';
 
 import { toggleTheme } from '../themeSwitcher.slice';
 

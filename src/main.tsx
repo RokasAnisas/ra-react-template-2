@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
-import { store } from '@/middleware/redux/redux.store';
-import { queryClient } from '@/middleware/react-query/react-query.setup';
+import { store } from '@/config/redux/redux.store';
+import { queryClient } from '@/config/react-query/react-query.setup';
 
 import App from './App';
 import './styles/global/_index.scss';
