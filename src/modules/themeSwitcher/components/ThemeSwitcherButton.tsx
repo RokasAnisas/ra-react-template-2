@@ -1,11 +1,15 @@
 import { FC } from 'react';
 
-import { useAppDispatch } from '@/config/redux/redux.hooks';
+import { useAppDispatch, useAppSelector } from '@/config/redux/redux.hooks';
+import { Button } from '@/components/Button';
 
-import { toggleTheme } from '../themeSwitcher.slice';
+import { selectTheme, toggleTheme } from '../themeSwitcher.slice';
 
 export const ThemeSwitcherButton: FC = () => {
   const dispatch = useAppDispatch();
+  const currentTheme = useAppSelector(selectTheme);
 
-  return <button onClick={() => dispatch(toggleTheme())}>Toggle theme</button>;
+  return (
+    <Button onClick={() => dispatch(toggleTheme())}>{currentTheme}</Button>
+  );
 };

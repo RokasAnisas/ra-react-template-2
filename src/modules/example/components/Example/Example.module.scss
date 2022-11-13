@@ -1,0 +1,23 @@
+@use 'src/config/styles/res' as res;
+
+.example {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  background-color: res.color('background');
+  padding: 2rem;
+
+  &__paragraph-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
