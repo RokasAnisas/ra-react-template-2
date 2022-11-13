@@ -36,7 +36,7 @@ export const Example = () => {
       <div>
         <span>Random fact</span>
         <div>
-          <i>{isLoading ? 'Loading...' : data?.data.fact}</i>
+          <i>{isLoading ? 'Loading...' : data?.fact}</i>
         </div>
       </div>
     </div>

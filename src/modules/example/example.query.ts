@@ -11,6 +11,7 @@ export const useGetExample = () => {
     await axios.get<ExampleQuery>('https://catfact.ninja/fact');
 
   return useQuery('example', exampleQuery, {
+    select: data => data.data,
     cacheTime: Infinity,
   });
 };
