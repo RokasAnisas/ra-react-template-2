@@ -1,10 +1,5 @@
-import axios from 'axios';
-
-interface GetCatFact {
-  fact: string;
-  length: number;
-}
+import { getCatFact } from './routes/getCatFact';
 
 export const apiRoutes = {
-  getCatFact: () => axios.get<GetCatFact>('https://catfact.ninja/fact'),
+  getCatFact,
 };
