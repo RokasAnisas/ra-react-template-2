@@ -19,7 +19,7 @@ export const Example: FC<ExampleProps> = ({}) => {
       <h1>ra-react-template-2</h1>
       <div className={cx(`${className}__paragraph-container`)}>
         <h2>Random cat fact</h2>
-        <p>{data?.fact}</p>
+        <p>{isFetching ? <i>Loading...</i> : data?.fact}</p>
         <Button onClick={refetch} disabled={isFetching}>
           {isFetching ? 'Loading...' : 'Another fact'}
         </Button>
