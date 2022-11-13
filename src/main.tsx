@@ -1,24 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
 
-import { store } from '@/middleware/redux/redux.store';
-import { queryClient } from '@/middleware/react-query/react-query.setup';
+import { ReduxProvider } from '@/config/redux/redux.provider';
+import { ReactQueryProvider } from '@/config/react-query/react-query.provider';
 
 import App from './App';
-import './styles/global/_index.scss';
-import './styles/theme/_index.scss';
+import './config/styles/global/_index.scss';
+import './config/styles/theme/_index.scss';
+import { ThemeProvider } from './modules/themeSwitcher/components/ThemeProvider';
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools />
-        <App />
-      </QueryClientProvider>
-    </Provider>
-  </React.StrictMode>
-);
+const initApp = () => {
+  const root = document.getElementById('root');
+
+  if (!root) return;
+
+  ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <ReduxProvider>
+        <ReactQueryProvider>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </ReactQueryProvider>
+      </ReduxProvider>
+    </React.StrictMode>
+  );
+};
+
+initApp();

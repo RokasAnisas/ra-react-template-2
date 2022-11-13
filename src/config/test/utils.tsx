@@ -2,7 +2,7 @@ import { Provider } from 'react-redux';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { render, RenderOptions } from '@testing-library/react';
 
-import { store } from '@/middleware/redux/redux.store';
+import { store } from '@/config/redux/redux.store';
 
 type Options = RenderOptions;
 

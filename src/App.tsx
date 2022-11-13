@@ -1,17 +1,17 @@
 import { FC } from 'react';
+import { Route } from 'react-router-dom';
 
-import { Example } from '@/features/example/components/Example';
-import { useApplyTheme } from '@/features/themeSwitcher/themeSwitcher.hooks';
-import { ThemeSwitcherButton } from '@/features/themeSwitcher/components/ThemeSwitcherButton';
+import { ThemeSwitcherButton } from '@/modules/themeSwitcher/components/ThemeSwitcherButton';
+import { HomeRoute } from '@/routes/Home.route';
+import { routes } from '@/config/react-router/routes';
+import { RouterProvider } from '@/config/react-router/router.provider';
 
 const App: FC = () => {
-  useApplyTheme();
-
   return (
-    <>
-      <ThemeSwitcherButton />
-      <Example />
-    </>
+    <RouterProvider>
+      <Route path={routes.home} element={<HomeRoute />} />
+      <Route path="/theme" element={<ThemeSwitcherButton />} />
+    </RouterProvider>
   );
 };
 

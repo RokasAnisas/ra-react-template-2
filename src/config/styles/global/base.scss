@@ -1,4 +1,4 @@
-@use 'src/styles/res' as res;
+@use 'src/config/styles/res' as res;
 
 body {
   @include res.transition([color background-color], res.duration('slow'));
