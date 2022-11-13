@@ -1,0 +1,33 @@
+{
+  "name": "Route",
+  "description": "Add new route",
+  "add": [
+    {
+      "dirPath": "src/routes",
+      "files": [
+        {
+          "fileName": "[ModuleName].route.tsx",
+          "template": [
+            "import { FC } from 'react';",
+            "",
+            "export const [ModuleName]Route: FC = () => {",
+            "  return <div>[ModuleName]</div>;",
+            "};",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "modify": [
+    {
+      "filePath": "src/config/react-router/routes.ts",
+      "lines": [
+        {
+          "hook": "// ADD_NEW_ROUTE",
+          "appendLines": ["[moduleName]: '/[module-name]',"]
+        }
+      ]
+    }
+  ]
+}
