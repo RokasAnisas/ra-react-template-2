@@ -14,7 +14,7 @@ const STORAGE_THEME_KEY = 'theme';
 
 // Define the initial state using that type
 const initialState: ThemeSwitcherState = {
-  theme: getStorageTheme() || 'dark',
+  theme: getStorageTheme() || 'light',
 };
 
 export const themeSwitcherSlice = createSlice({
