@@ -3,7 +3,6 @@ ls:
     .json: kebab-case
 
   src:
-    .dir: kebab-case
     .d.ts: kebab-case
 
     components/*:
