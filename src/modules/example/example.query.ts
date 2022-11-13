@@ -1,14 +1,9 @@
-import axios from 'axios';
 import { useQuery } from 'react-query';
 
-interface ExampleQuery {
-  fact: string;
-  length: number;
-}
+import { apiRoutes } from '@/config/api/api.routes';
 
 export const useGetExample = () => {
-  const exampleQuery = async () =>
-    await axios.get<ExampleQuery>('https://catfact.ninja/fact');
+  const exampleQuery = apiRoutes.getCatFact;
 
   return useQuery('example', exampleQuery, {
     select: data => data.data,
