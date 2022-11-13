@@ -1,5 +1,9 @@
 @use 'src/config/styles/res' as res;
 
+:root {
+  font-family: sans-serif;
+}
+
 body {
   @include res.transition([color background-color], res.duration('slow'));
 
