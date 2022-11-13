@@ -1,4 +1,4 @@
-@use 'src/styles/res' as res;
+@use 'src/config/styles/res' as res;
 
 .button {
   @include res.transition([background-color]);

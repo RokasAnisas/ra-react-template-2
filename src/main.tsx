@@ -8,8 +8,8 @@ import { store } from '@/config/redux/redux.store';
 import { queryClient } from '@/config/react-query/react-query.setup';
 
 import App from './App';
-import './styles/global/_index.scss';
-import './styles/theme/_index.scss';
+import './config/styles/global/_index.scss';
+import './config/styles/theme/_index.scss';
 import { ThemeProvider } from './modules/themeSwitcher/components/ThemeProvider';
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
